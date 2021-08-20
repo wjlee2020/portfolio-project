@@ -1,0 +1,56 @@
+.advice {
+    background-color: rgba(white, 0.6);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3rem 6rem rgba(black, 0.4);
+    border-radius: 3px;
+    padding: 6rem;
+    font-size: var(--font-size-default);
+    transform: skewX(-12deg);
+
+    &__shape {
+        position: relative;
+    }
+    &__img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        margin-right: 5rem;
+        object-fit: cover;
+        transition: all 500ms ease;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+
+    & > * {
+        transform: skewX(12deg);
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: 50%;
+        left: 39%;
+        transform: translate(-50%, 20%);
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all 500ms;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+    }
+
+    &:hover &__img {
+        filter: blur(2px) brightness(88%);
+    }
+}

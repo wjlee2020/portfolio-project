@@ -1,0 +1,74 @@
+/* About  */
+.section-about {
+    background-color: var(--color-gray-light);
+    padding: 25rem 0;
+    margin-top: -23vh;
+}
+
+/* section features */
+
+.section-features {
+    margin-top: -11.5rem;
+    padding: 20rem 0;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(2, 0, 36, 0.801) 0%,
+            rgba(29, 29, 129, 0.801) 35%,
+            rgba(15, 137, 161, 0.801) 100%
+        ),
+        url("https://images.unsplash.com/photo-1590437084089-9f5ae1500176?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    background-position: center;
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+/* section journey */
+
+.section-journey {
+    background-color: var(--color-gray-light);
+    padding: 25rem 0 15rem 0;
+    margin-top: -11.5rem;
+}
+
+/* section advices */
+
+.section-advices {
+    position: relative;
+    padding: 15rem 0;
+}
+
+/* section book */
+
+.section-book {
+    padding: 19rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(2, 0, 36, 0.801) 0%,
+        rgba(29, 29, 129, 0.801) 35%,
+        rgba(15, 137, 161, 0.801) 100%
+    );
+}
+
+.book {
+    background-image: linear-gradient(
+            105deg,
+            rgba(255, 255, 255, 0.8) 49%,
+            rgba(156, 255, 40, 0) 49%,
+            transparent 86%
+        ),
+        url("https://images.unsplash.com/photo-1591520284162-8e64eceebacf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem (rgba(black, 0.45));
+
+    height: 50rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}

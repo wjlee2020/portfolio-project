@@ -1,0 +1,31 @@
+/* About Feature box */
+
+.feature-box {
+    background-color: rgba(#fff, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.7);
+    transition: all 200ms;
+    cursor: pointer;
+    overflow: auto;
+
+    &__icon {
+        font-size: 6rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(2, 0, 36, 0.801) 0%,
+            rgba(29, 29, 129, 0.801) 35%,
+            rgba(15, 137, 161, 0.801) 100%
+        );
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &:hover {
+        transform: scale(1.05) translateY(-1.5rem);
+    }
+}
