@@ -294,9 +294,12 @@ export default function About() {
                 <div className="row">
                     <div className="book">
                         <div className="book__form">
-                            <form method="post">
+                            <form method="post" className="form">
+                                <div className="form__group">
                                 <input
                                     type="text"
+                                    required
+                                    id="fullName"
                                     placeholder="enter your full name"
                                     aria-label="full name input"
                                     value={fullName}
@@ -304,8 +307,11 @@ export default function About() {
                                         setFullName(target.value)
                                     }
                                 />
+                                <label for="fullName">Full Name</label>
                                 <input
                                     type="email"
+                                    required
+                                    id="email"
                                     placeholder="enter your email address"
                                     aria-label="email input"
                                     value={email}
@@ -313,6 +319,8 @@ export default function About() {
                                         setEmail(target.value)
                                     }
                                 />
+                                <label for="email">Email</label>
+                                </div>
                             </form>
                         </div>
                     </div>
