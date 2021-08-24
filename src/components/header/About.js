@@ -295,31 +295,36 @@ export default function About() {
                     <div className="book">
                         <div className="book__form">
                             <form method="post" className="form">
+                                <div className="u-margin-bottom-small">
+                                    <h2 className="heading-secondary">
+                                        Send an Inquiry
+                                    </h2>
+                                </div>
                                 <div className="form__group">
-                                <input
-                                    type="text"
-                                    required
-                                    id="fullName"
-                                    placeholder="enter your full name"
-                                    aria-label="full name input"
-                                    value={fullName}
-                                    onChange={({ target }) =>
-                                        setFullName(target.value)
-                                    }
-                                />
-                                <label for="fullName">Full Name</label>
-                                <input
-                                    type="email"
-                                    required
-                                    id="email"
-                                    placeholder="enter your email address"
-                                    aria-label="email input"
-                                    value={email}
-                                    onChange={({ target }) =>
-                                        setEmail(target.value)
-                                    }
-                                />
-                                <label for="email">Email</label>
+                                    <input
+                                        type="text"
+                                        required
+                                        id="fullName"
+                                        placeholder="enter your full name"
+                                        aria-label="full name input"
+                                        value={fullName}
+                                        onChange={({ target }) =>
+                                            setFullName(target.value)
+                                        }
+                                    />
+                                    <label for="fullName">Full Name</label>
+                                    <input
+                                        type="email"
+                                        required
+                                        id="email"
+                                        placeholder="enter your email address"
+                                        aria-label="email input"
+                                        value={email}
+                                        onChange={({ target }) =>
+                                            setEmail(target.value)
+                                        }
+                                    />
+                                    <label for="email">Email</label>
                                 </div>
                             </form>
                         </div>
