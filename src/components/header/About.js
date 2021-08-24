@@ -302,6 +302,7 @@ export default function About() {
                                 </div>
                                 <div className="form__group">
                                     <input
+                                        className="form__input"
                                         type="text"
                                         required
                                         id="fullName"
@@ -314,6 +315,7 @@ export default function About() {
                                     />
                                     <label for="fullName">Full Name</label>
                                     <input
+                                        className="form__input"
                                         type="email"
                                         required
                                         id="email"
