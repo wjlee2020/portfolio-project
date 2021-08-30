@@ -306,27 +306,36 @@ export default function About() {
                                         type="text"
                                         required
                                         id="fullName"
-                                        placeholder="enter your full name"
+                                        placeholder="Full Name"
                                         aria-label="full name input"
                                         value={fullName}
                                         onChange={({ target }) =>
                                             setFullName(target.value)
                                         }
                                     />
-                                    <label for="fullName">Full Name</label>
+                                    <label
+                                        className="form__label"
+                                        for="fullName"
+                                    >
+                                        Full Name
+                                    </label>
+                                </div>
+                                <div className="form__group">
                                     <input
                                         className="form__input"
                                         type="email"
                                         required
                                         id="email"
-                                        placeholder="enter your email address"
+                                        placeholder="Email Address"
                                         aria-label="email input"
                                         value={email}
                                         onChange={({ target }) =>
                                             setEmail(target.value)
                                         }
                                     />
-                                    <label for="email">Email</label>
+                                    <label className="form__label" for="email">
+                                        Email Address
+                                    </label>
                                 </div>
                             </form>
                         </div>
