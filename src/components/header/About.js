@@ -337,6 +337,43 @@ export default function About() {
                                         Email Address
                                     </label>
                                 </div>
+                                <div className="form__group u-margin-bottom-medium">
+                                    <div className="form__radio-group">
+                                        <input
+                                            className="form__radio-input"
+                                            type="radio"
+                                            id="short"
+                                            name="length"
+                                        />
+                                        <label
+                                            for="short"
+                                            className="form__radio-label"
+                                        >
+                                            <span className="form__radio-btn"></span>
+                                            Short Trip
+                                        </label>
+                                    </div>
+                                    <div className="form__radio-group">
+                                        <input
+                                            name="length"
+                                            className="form__radio-input"
+                                            type="radio"
+                                            id="long"
+                                        />
+                                        <label
+                                            for="long"
+                                            className="form__radio-label"
+                                        >
+                                            <span className="form__radio-btn"></span>
+                                            Long Trip
+                                        </label>
+                                    </div>
+                                </div>
+                                <div className="form__group">
+                                    <button className="btn btn__colored">
+                                        Next Step
+                                    </button>
+                                </div>
                             </form>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 /* buttons for header component */
 
 .btn {
+    &,
     &:link,
     &:visited {
         font-size: var(--font-size-default);
@@ -11,6 +12,10 @@
         border-radius: 10rem;
         transition: all 200ms ease-in;
         position: relative;
+
+        // changes made for button element
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -21,8 +26,11 @@
             opacity: 0;
         }
     }
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(black, 0.4);
     }
 
     &__white {
