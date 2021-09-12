@@ -5,7 +5,7 @@ export default function Header() {
         <>
             <div className="navigation">
                 <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
-                <label className="navigation__button" for="navi-toggle">MENU</label>
+                <label className="navigation__button" htmlFor="navi-toggle">MENU</label>
 
                 <div className="navigation__background">&nbsp;</div>
 
@@ -15,13 +15,13 @@ export default function Header() {
                             <a className="navigation__link" href="#">About Korea</a>
                         </li>
                         <li className="navigation__item">
-                            <a className="navigation__link" href="#">4 Main</a>
+                            <a className="navigation__link" href="#">My Picks</a>
                         </li>
                         <li className="navigation__item">
-                            <a className="navigation__link" href="#">Others</a>
+                            <a className="navigation__link" href="#">Recommendations</a>
                         </li>
                         <li className="navigation__item">
-                            <a className="navigation__link" href="#">stories</a>
+                            <a className="navigation__link" href="#">Stories</a>
                         </li>
                         <li className="navigation__item">
                             <a className="navigation__link" href="#">Inquiry</a>

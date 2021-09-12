@@ -1,19 +1,83 @@
 .navigation {
   &__checkbox {
+    display: none;
   }
 
   &__button {
+    background-color: white;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6rem;
+    left: 6rem;
+    z-index: 100;
   }
 
   &__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    left: 6.5rem;
+    background-image: radial-gradient(
+      circle,
+      rgba(79, 74, 173, 1) 0%,
+      rgba(184, 184, 255, 1) 0%,
+      rgba(58, 130, 235, 1) 100%
+    );
+    z-index: 98;
+    transform: scale(80);
   }
 
   &__nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
   }
 
   &__list {
+    position: absolute;
+    @include centerVerHorz;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
   }
 
   &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 3rem;
+      font-weight: 300;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+      background-image: linear-gradient(
+        135deg,
+        transparent 0%,
+        transparent 50%,
+        white 50%
+      );
+      background-size: 240%;
+      transition: all 300ms;
+    }
+    &:hover,
+    &:active {
+      background-position: 100%;
+      border-radius: 1rem;
+      color: rgba(79, 74, 173, 1);
+      transform: translateX(1rem);
+    }
   }
 }

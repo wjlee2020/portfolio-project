@@ -29,7 +29,7 @@ export default function ActionForm() {
                                     />
                                     <label
                                         className="form__label"
-                                        for="fullName"
+                                        htmlFor="fullName"
                                     >
                                         Full Name
                                     </label>
@@ -47,7 +47,7 @@ export default function ActionForm() {
                                             setEmail(target.value)
                                         }
                                     />
-                                    <label className="form__label" for="email">
+                                    <label className="form__label" htmlFor="email">
                                         Email Address
                                     </label>
                                 </div>
@@ -60,7 +60,7 @@ export default function ActionForm() {
                                             name="length"
                                         />
                                         <label
-                                            for="short"
+                                            htmlFor="short"
                                             className="form__radio-label"
                                         >
                                             <span className="form__radio-btn"></span>
@@ -75,7 +75,7 @@ export default function ActionForm() {
                                             id="long"
                                         />
                                         <label
-                                            for="long"
+                                            htmlFor="long"
                                             className="form__radio-label"
                                         >
                                             <span className="form__radio-btn"></span>
