@@ -21,12 +21,6 @@
 1800+              laptop/desktop monitor
 */
 
-@mixin response-phone {
-  @media (max-width: 600px) {
-    @content;
-  }
-}
-
 /*
 breakpoint args:
 -phone
