@@ -1,6 +1,6 @@
 export default function Cards() {
     return (
-        <section className="section-journey">
+        <section className="section-journey" id="section-tours">
         <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">
                 Recommended Destinations
@@ -35,7 +35,7 @@ export default function Cards() {
                                     Trains
                                 </p>
                             </div>
-                            <a href="#" className="btn btn__white">
+                            <a href="#popup" className="btn btn__white">
                                 Go Now!
                             </a>
                         </div>
@@ -70,7 +70,7 @@ export default function Cards() {
                                     Trains
                                 </p>
                             </div>
-                            <a href="#" className="btn btn__white">
+                            <a href="#popup" className="btn btn__white">
                                 Go Now!
                             </a>
                         </div>
@@ -105,7 +105,7 @@ export default function Cards() {
                                     Trains
                                 </p>
                             </div>
-                            <a href="#" className="btn btn__white">
+                            <a href="#popup" className="btn btn__white">
                                 Go Now!
                             </a>
                         </div>

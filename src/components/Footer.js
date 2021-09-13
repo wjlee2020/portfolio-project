@@ -1,4 +1,3 @@
-import PopUp from "./subcomponents/PopUp";
 
 export default function Footer() {
     return (

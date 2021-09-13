@@ -1,6 +1,6 @@
 export default function PopUp() {
     return (
-        <div className="popup">
+        <div className="popup" id="popup">
             <div className="popup__content">
                 <div className="popup__left">
                     <img
@@ -13,6 +13,7 @@ export default function PopUp() {
                         alt="tour phot 2" />
                 </div>
                 <div className="popup__right">
+                    <a className="popup__close" href="#section-tours">&times;</a>
                     <h2 className="heading-secondary u-margin-bottom-medium">
                         Book Now!
                     </h2>
