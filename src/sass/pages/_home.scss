@@ -3,6 +3,10 @@
   background-color: var(--color-gray-light);
   padding: 25rem 0;
   margin-top: -23vh;
+
+  @include response(tab-portrait) {
+    padding: 21rem 0;
+  }
 }
 
 /* section features */
@@ -24,6 +28,10 @@
   & > * {
     transform: skewY(7deg);
   }
+
+  @include response(tab-portrait) {
+    padding: 15rem 0;
+  }
 }
 
 /* section journey */
@@ -32,6 +40,10 @@
   background-color: var(--color-gray-light);
   padding: 25rem 0 15rem 0;
   margin-top: -11.5rem;
+
+  @include response(tab-portrait) {
+    padding: 20rem 0 10rem 0;
+  }
 }
 
 /* section advices */
@@ -39,6 +51,10 @@
 .section-advices {
   position: relative;
   padding: 15rem 0;
+
+  @include response(tab-portrait) {
+    padding: 10rem 0;
+  }
 }
 
 /* section book */

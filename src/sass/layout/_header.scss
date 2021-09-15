@@ -17,9 +17,11 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 72vh, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 72vh, 0% 100%);
 
-  @include response(phone) {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+  @include response(tab-portrait) {
+    height: 70vh;
+    margin-bottom: 5rem;
+    -webkit-clip-path: none;
+    clip-path: none;
   }
 
   &__logo-box {
