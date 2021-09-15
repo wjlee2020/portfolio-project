@@ -81,10 +81,35 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem (rgba(black, 0.45));
 
-  height: 50rem;
+  @include response(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba(white, 0.9) 0%,
+        rgba(white, 0.9) 65%,
+        transparent 65%
+      ),
+      url("https://images.unsplash.com/photo-1591520284162-8e64eceebacf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+  }
+
+  @include response(tab-portrait) {
+    background-image: linear-gradient(
+        to right,
+        rgba(white, 0.9) 0%,
+        rgba(white, 0.9) 100%
+      ),
+      url("https://images.unsplash.com/photo-1591520284162-8e64eceebacf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+  }
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include response(tab-land) {
+      width: 65%;
+    }
+
+    @include response(tab-portrait) {
+      width: 100%;
+    }
   }
 }
