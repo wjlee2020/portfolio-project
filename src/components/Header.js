@@ -16,7 +16,7 @@ export default function Header() {
                 <div className="header__title-box">
                     <h1 className="heading-primary">
                         <span className="heading-primary__main">
-                            ㄷㅎㅁㄱㅁㅅ
+                            ㄷㅎㅁㄱ
                         </span>
                         <span className="heading-primary__sub">
                             Welcome to Korea
