@@ -8,8 +8,8 @@ export default function PopUpCards() {
                             <h3 className="heading-tertiary">서울</h3>
                             <p className="feature-box__text">
                                 Seoul, an international Hub where you can find
-                                just about everything. Street food to fine
-                                dining, enjoy the city life!
+                                just about everything. Street food at GwangJang to fine
+                                dining, enjoy the city life! 
                             </p>
                         </div>
                     </div>
