@@ -1,56 +1,89 @@
 .advice {
-    background-color: rgba(white, 0.6);
-    width: 80%;
-    margin: 0 auto;
+  background-color: rgba(white, 0.6);
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(black, 0.4);
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: var(--font-size-default);
+  transform: skewX(-12deg);
+
+  @include response(tab-portrait) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 6.5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 3rem 6rem rgba(black, 0.4);
-    border-radius: 3px;
-    padding: 6rem;
-    font-size: var(--font-size-default);
-    transform: skewX(-12deg);
+  }
 
-    &__shape {
-        position: relative;
-    }
-    &__img {
-        width: 15rem;
-        height: 15rem;
-        border-radius: 50%;
-        margin-right: 5rem;
-        object-fit: cover;
-        transition: all 500ms ease;
-    }
+  @include response(phone) {
+    transform: skewX(0);
+  }
 
-    &:not(:last-child) {
-        margin-bottom: 8rem;
-    }
+  &__shape {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: cirlce(50% at 50% 50%);
+    transform: translateX(-2rem) skewX(12deg);
+    position: relative;
 
-    & > * {
-        transform: skewX(12deg);
-    }
+    margin-top: -1rem;
 
-    &__caption {
-        position: absolute;
-        bottom: 50%;
-        left: 39%;
-        transform: translate(-50%, 20%);
-        color: white;
-        text-transform: uppercase;
-        font-size: 1.7rem;
-        text-align: center;
-        opacity: 0;
-        transition: all 500ms;
-        backface-visibility: hidden;
+    @include response(phone) {
+      transform: translateX(-2rem) skewX(0);
+      margin-left: 2rem;
     }
+  }
+  &__img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin-right: 5rem;
+    object-fit: cover;
+    transition: all 500ms ease;
+  }
 
-    &:hover &__caption {
-        opacity: 1;
-    }
+  &:not(:last-child) {
+    margin-bottom: 8rem;
+  }
 
-    &:hover &__img {
-        filter: blur(2px) brightness(88%);
+  & > * {
+    transform: skewX(12deg);
+
+    @include response(phone) {
+      transform: skewX(0);
     }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 50%;
+    left: 39%;
+    transform: translate(-50%, 20%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 500ms;
+    backface-visibility: hidden;
+
+    @include response(tab-portrait) {
+    }
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+  }
+
+  &:hover &__img {
+    filter: blur(2px) brightness(88%);
+  }
 }
