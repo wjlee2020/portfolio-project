@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 2rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -35,6 +34,11 @@ code {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+
+    @include response(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &__sub {
@@ -44,6 +48,10 @@ code {
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+
+    @include response(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -63,6 +71,13 @@ code {
   color: transparent;
   letter-spacing: 2px;
   transition: all 200ms;
+
+  @include response(tab-portrait) {
+    font-size: 3rem;
+  }
+  @include response(phone) {
+    font-size: 2.4rem;
+  }
 
   &:hover {
     transform: skewY(5deg) skewX(5deg) scale(1.1);

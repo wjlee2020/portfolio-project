@@ -25,4 +25,10 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 2rem;
+
+  @include response(tab-portrait) {
+    // width < 600
+    padding: 0;
+  }
 }

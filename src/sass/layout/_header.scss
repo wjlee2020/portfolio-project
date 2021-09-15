@@ -3,38 +3,43 @@
 /* ====================== */
 
 .header {
-    height: 95vh;
-    background-image: linear-gradient(
-            to right bottom,
-            rgba(2, 0, 36, 0.801) 0%,
-            rgba(29, 29, 129, 0.801) 35%,
-            rgba(15, 137, 161, 0.801) 100%
-        ),
-        url("https://images.unsplash.com/photo-1517868674985-0525518ae392?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 72vh, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 72vh, 0% 100%);
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(2, 0, 36, 0.801) 0%,
+      rgba(29, 29, 129, 0.801) 35%,
+      rgba(15, 137, 161, 0.801) 100%
+    ),
+    url("https://images.unsplash.com/photo-1517868674985-0525518ae392?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 72vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 72vh, 0% 100%);
 
-    &__logo-box {
-        position: absolute;
-        top: 4rem;
-        right: 2rem;
-    }
+  @include response(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+  }
 
-    &__logo {
-        height: 3.5rem;
-        clip-path: polygon(0 0, 100% 0, 66% 50%, 100% 100%, 0 99%, 0 48%);
-    }
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+  }
 
-    &__title-box {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
+  &__logo {
+    height: 3.5rem;
+    clip-path: polygon(0 0, 100% 0, 66% 50%, 100% 100%, 0 99%, 0 48%);
+  }
+
+  &__title-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 /* ====================== */

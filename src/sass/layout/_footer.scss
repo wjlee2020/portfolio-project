@@ -4,6 +4,10 @@
   padding: 10rem 0;
   font-size: 1.4rem;
 
+  @include response(tab-portrait) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
@@ -18,6 +22,11 @@
   &__navigation {
     border-top: 1px solid var(--color-gray-light);
     display: inline-block;
+
+    @include response(tab-portrait) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -54,5 +63,10 @@
   &__copyright {
     width: 80%;
     float: right;
+
+    @include response(tab-portrait) {
+      width: 100%;
+      float: none;
+    }
   }
 }

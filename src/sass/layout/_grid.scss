@@ -1,48 +1,65 @@
 .row {
-    max-width: var(--grid-width);
-    margin: 0 auto;
+  max-width: var(--grid-width);
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: var(--gutter-vert);
+
+    @include response(tab-portrait) {
+      margin-bottom: var(--gutter-vertical-sm);
+    }
+  }
+
+  @include response(tab-portrait) {
+    max-width: 40rem;
+    padding: 0 2.5rem;
+  }
+
+  @include clearFix;
+
+  [class^="col-"] {
+    float: left;
 
     &:not(:last-child) {
-        margin-bottom: var(--gutter-vert);
+      margin-right: var(--gutter-horz);
+
+      @include response(tab-portrait) {
+        margin-right: 0;
+        margin-bottom: var(--gutter-vertical-sm);
+      }
     }
 
-    @include clearFix;
-
-    [class^="col-"] {
-        float: left;
-
-        &:not(:last-child) {
-            margin-right: var(--gutter-horz);
-        }
+    @include response(tab-portrait) {
+      width: 100% !important;
     }
+  }
 
-    .col-1-of-2 {
-        width: calc((100% - #{var(--gutter-horz)}) / 2);
-    }
+  .col-1-of-2 {
+    width: calc((100% - #{var(--gutter-horz)}) / 2);
+  }
 
-    .col-1-of-3 {
-        width: calc((100% - 2 * #{var(--gutter-horz)}) / 3);
-    }
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{var(--gutter-horz)}) / 3);
+  }
 
-    .col-2-of-3 {
-        width: calc(
-            2 * ((100% - 2 * #{var(--gutter-horz)}) / 3) + #{var(--gutter-horz)}
-        );
-    }
+  .col-2-of-3 {
+    width: calc(
+      2 * ((100% - 2 * #{var(--gutter-horz)}) / 3) + #{var(--gutter-horz)}
+    );
+  }
 
-    .col-1-of-4 {
-        width: calc((100% - 3 * #{var(--gutter-horz)}) / 4);
-    }
+  .col-1-of-4 {
+    width: calc((100% - 3 * #{var(--gutter-horz)}) / 4);
+  }
 
-    .col-2-of-4 {
-        width: calc(
-            2 * ((100% - 3 * #{var(--gutter-horz)}) / 4) + #{var(--gutter-horz)}
-        );
-    }
-    .col-3-of-4 {
-        width: calc(
-            3 * ((100% - 3 * #{var(--gutter-horz)}) / 4) +
-                (#{var(--gutter-horz)} * 2)
-        );
-    }
+  .col-2-of-4 {
+    width: calc(
+      2 * ((100% - 3 * #{var(--gutter-horz)}) / 4) + #{var(--gutter-horz)}
+    );
+  }
+  .col-3-of-4 {
+    width: calc(
+      3 * ((100% - 3 * #{var(--gutter-horz)}) / 4) + (#{var(--gutter-horz)} * 2)
+    );
+  }
 }
