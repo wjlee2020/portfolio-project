@@ -14,10 +14,10 @@ export default function PopUp() {
                 </div>
                 <div className="popup__right">
                     <a className="popup__close" href="#section-tours">&times;</a>
-                    <h2 className="heading-secondary u-margin-bottom-medium">
+                    <h2 className="heading-secondary u-margin-bottom-none">
                         Book Now!
                     </h2>
-                    <h3 className="heading-tertiary u-margin-bottom-small">Important &ndash; Please read terms before booking</h3>
+                    <h3 className="heading-tertiary u-margin-bottom-none">Important &ndash; Please read terms before booking</h3>
                     <p className="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate ipsum vel feugiat cursus. Phasellus tristique eu elit sagittis pharetra. Suspendisse potenti. Duis id turpis sit amet leo varius molestie et nec eros. Aenean rutrum velit id vestibulum faucibus. Etiam posuere, turpis nec varius varius, ligula nisl vulputate felis, sed tristique metus risus et arcu. Quisque scelerisque condimentum nulla. Quisque mattis congue metus, nec pulvinar nunc pharetra et.</p>
                     <a className="btn btn__colored" href="#">Book Now</a>
                 </div>
