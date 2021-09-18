@@ -2,7 +2,7 @@ export default function SmGallery() {
     return (
         <section className="section-about">
                 <div className="u-center-text u-margin-bottom-big">
-                    <h2 className="heading-secondary">
+                    <h2 className="heading-secondary" id="about-korea">
                         Places to Go, Food to Eat
                     </h2>
                 </div>

@@ -11,7 +11,7 @@ export default function Navigation() {
         <nav className="navigation__nav">
             <ul className="navigation__list">
                 <li className="navigation__item">
-                    <a className="navigation__link" href="#">About Korea</a>
+                    <a className="navigation__link" href="#about-korea">About Korea</a>
                 </li>
                 <li className="navigation__item">
                     <a className="navigation__link" href="#">My Picks</a>
