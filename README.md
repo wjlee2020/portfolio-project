@@ -2,6 +2,7 @@
 
 ### To start
 ```bash
+# unless already installed:
 yarn install
 
 yarn start
